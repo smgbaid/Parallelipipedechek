@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBackgroundDark"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CatalogActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:backgroundTint="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/Btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Алфавитные каталоги"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_selectdark"
+        />
+
+    <Button
+        android:id="@+id/Btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Каталог научной библиотеки им. В.Г. Белинского"
+        android:layout_below="@+id/Btn1"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_selectdark"/>
+
+    <Button
+        android:id="@+id/Btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Региональный каталог библиотек Свердловской области (РКБ СО)"
+        android:layout_below="@+id/Btn2"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_selectdark"/>
+
+    <Button
+        android:id="@+id/Btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Система корпоративной каталогизации (СКК)"
+        android:layout_below="@+id/Btn3"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_select"/>
+
+    <Button
+        android:id="@+id/Btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONSENSUS OMNIUM: корпоративная сеть библиотек Урала"
+        android:layout_below="@+id/Btn4"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_select"/>
+
+    <Button
+        android:id="@+id/Btn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сводный каталог подписки на периодические издания по Екатеринбургу"
+        android:layout_below="@+id/Btn5"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_select"/>
+
+    <Button
+        android:id="@+id/Btn7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сводный каталог иностранных журналов г. Екатеринбурга (1997–2003)"
+        android:layout_below="@+id/Btn6"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_selectdark"/>
+
+    <Button
+        android:id="@+id/Btn8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сводный каталог Газеты России (1703-1917)"
+        android:layout_below="@+id/Btn7"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_selectdark"/>
+
+    <Button
+        android:id="@+id/Btn9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Каталоги российских и зарубежных библиотек (каталоги книг, журналов, статей)"
+        android:layout_below="@+id/Btn8"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_selectdark"/>
+
+    <Button
+        android:id="@+id/Btn10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Арбикон"
+        android:layout_below="@+id/Btn9"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_select"/>
+
+    <Button
+        android:id="@+id/Btn11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сигла"
+        android:layout_below="@+id/Btn10"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_select"/>
+
+</RelativeLayout>

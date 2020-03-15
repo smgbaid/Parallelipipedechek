@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/homeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Home"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/catalogBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Поиск в каталогах"
+        android:layout_below="@id/homeView"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_select"/>
+
+    <Button
+    android:id="@+id/eventsBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Афиша мероприятий"
+    android:layout_below="@id/catalogBtn"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_select"/>
+
+    <Button
+        android:id="@+id/newsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Новости"
+        android:layout_below="@id/eventsBtn"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_select"/>
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Доставка документов"
+        android:layout_below="@id/newsBtn"
+        android:layout_margin="5dp"
+        android:background="@drawable/btn_select"/>
+
+    <Button
+        android:id="@+id/qrBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sendBtn"
+        android:background="@drawable/ic_qrscan"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"/>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:backgroundTint="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
